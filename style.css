@@ -6,17 +6,28 @@ body{
 .head{
     background-color: violet;
 }
-.head-item ul li{
- float: right;
- list-style: none;
+
+.head-item{
+    display: flex;
+    box-sizing: border-box;
 }
-.head-item  a{
+.head-menu{
+    position: relative;
+    left :700px;
+}
+.head-menu ul{
+  float:right;
+  margin-right: 5px;
+}
+.head-menu ul li{
+    float: right;
+    list-style: none;
+}
+.head-menu ul li a{
     text-decoration: none;
-    text-align: center;
-    padding-left: 40px;
-    float:right;
     color: white;
-    
+    margin: 30px;
+    text-align: center;
 }
 
 h1{
@@ -81,17 +92,20 @@ section{
     background-repeat: no-repeat;
    
 }
-
+.content-wrapper{
+    display: flex;
+   align-items: center;
+}
 .recipies-item{
-    width: 25%;
-    height: 450px;
-    float: left;
-    margin-left: 5%;
-    padding-left: 5%;
-    border-radius: 5%;
-    /* box-shadow: 5px 7px 30px gray; */
-    box-shadow: 5px 7px 15px #888888;
+    margin: 0px 20px;
+    display: flex;
+    flex: 1;
+    padding: 22px;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
+    border-radius: 5%;
+    box-shadow: 5px 7px 15px #888888;
 
 }
 .recipies-item p{
@@ -100,7 +114,7 @@ section{
 .recipies-item img{
     width: 250px;
     height: 250px;
-    margin-top: 5%;
+    
 }
 .recipies-item h2{
    text-align: left; 
